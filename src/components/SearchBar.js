@@ -3,6 +3,10 @@ import { FormGroup, ControlLabel, FormControl, Glyphicon } from 'react-bootstrap
 
 
 class SearchBar extends Component {
+    constructor() {
+        super();
+        }
+        
     render() {
         return (
             <div>
