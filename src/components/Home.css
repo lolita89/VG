@@ -1,0 +1,10 @@
+.jumbotron {
+    margin-bottom: 4em;
+    border: 40px;
+    border-style: solid;
+    border-color: white !important;
+  }
+
+.newgroup {
+text-align: left !important;
+  }
