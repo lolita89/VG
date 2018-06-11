@@ -1,17 +1,11 @@
-import React, { Component } from 'react';
-import { Panel, Grid, Row, Col, Image, Thumbnail, FormGroup, FormControl, Glyphicon  } from 'react-bootstrap';
-import './Home.css';
-import Topics from './Topic';
-import SearchBar from './SearchBar';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Row, Col, Image } from 'react-bootstrap';
 
-
-class Home extends Component {
-    constructor() {
-    super();
-    this.state = {
-        search: ''
-    };
-    this.updateSearch = this.updateSearch.bind(this)
+class Flag extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
     }
 
     flagChange(eventcika) {
@@ -32,26 +26,10 @@ class Home extends Component {
         }
 
     }
-
-    updateSearch(event) {
-        console.log('testing1');
-        var new_value = event.target.value;
-
-        console.log(new_value);
-
-        this.setState({
-            search: new_value
-        });
-    }
-
     render() {
-
         return (
-            <div className="container">
-                <Grid>
-                    <Panel>
-                        <Panel.Body>
-                            <Row className="show-grid">
+            <div>
+            <Row className="show-grid">
                                 <Col md={6} mdpush={6}>
                                     <h2><b>Groups</b></h2>
                                     <b />
@@ -74,18 +52,11 @@ class Home extends Component {
                                     <Image hspace="3" className="flagon" id="flag14" onClick={this.flagChange} src="https://static.virtuagym.com/v29521123/images/flags/no.png" />
                                 </Col>
                             </Row>
-                            <SearchBar searchrr={this.state.search} updateSearch={this.updateSearch} />           
-                            <Topics searchzz={this.state.search} />
-                        </Panel.Body>
-                    </Panel> 
-                </Grid>
             </div>
         );
     }
 }
 
-Home.propTypes = {
+Flag.propTypes = {};
 
-};
-
-export default Home;
+export default Flag;

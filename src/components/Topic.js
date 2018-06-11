@@ -43,7 +43,7 @@ class Topics extends React.Component {
 
       let filteredTopics = topics.filter(
         (topic) => {
-          return topic.name.indexOf(this.props.search) !== -1;
+          return topic.name.toLowerCase().indexOf(this.props.searchzz.toLowerCase()) !== -1;
         }
       );
 
