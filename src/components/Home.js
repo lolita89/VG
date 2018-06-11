@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import { Panel, Grid, Row, Col, ButtonToolbar, ToggleButton, ToggleButtonGroup, Image, Label } from 'react-bootstrap';
+import { Panel, Grid, Row, Col, Image } from 'react-bootstrap';
 import './Home.css';
 import SearchBar from './SearchBar';
-import Topics from './Topics';
+import Topics from './Topic';
 
 
 class Home extends Component {
