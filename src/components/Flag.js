@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col, Image } from 'react-bootstrap';
+import './Flag.css';
+
 
 class Flag extends React.Component {
     constructor(props) {
@@ -51,7 +53,7 @@ class Flag extends React.Component {
                                     <Image hspace="3" className="flagon" id="flag13" onClick={this.flagChange} src="https://static.virtuagym.com/v29521123/images/flags/lv.png" />
                                     <Image hspace="3" className="flagon" id="flag14" onClick={this.flagChange} src="https://static.virtuagym.com/v29521123/images/flags/no.png" />
                                 </Col>
-                            </Row>
+            </Row>
             </div>
         );
     }

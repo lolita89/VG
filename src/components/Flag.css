@@ -1,0 +1,14 @@
+.flagoff {
+    width: 32px;
+    height: 20px;
+    border-radius: 2px;
+    cursor: pointer !important;
+    opacity: 0.2;
+  }
+  
+  .flagon {
+    width: 32px;
+    height: 20px;
+    border-radius: 2px;
+    cursor: pointer !important;
+  }
